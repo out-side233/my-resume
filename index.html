@@ -80,7 +80,7 @@
         </div>
     </nav>
 
-    <!-- 全屏菜单层 (同步为深色模式) -->
+    <!-- 全屏菜单栏 -->
     <div id="mobile-menu" class="fixed inset-0 bg-black text-white z-40 flex flex-col items-center justify-center space-y-8 text-2xl font-medium tracking-tight">
         <a href="#about" class="menu-link hover:line-through">ABOUT / 个人</a>
         <a href="#experience" class="menu-link hover:line-through">EXPERIENCE / 实习</a>
@@ -184,62 +184,70 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Project 1 -->
+                <!-- Project 1: Medical AI -->
                 <div class="border border-white/10 p-8 hover:bg-white/[0.04] transition-all">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-lg font-bold">可解释 AI：医疗方程挖掘系统</h3>
-                        <span class="text-[10px] bg-white/10 px-2 py-1">2024.09 - 2025.05</span>
+                        <h3 class="text-lg font-bold leading-tight">可解释 AI：医疗方程挖掘系统<br><span class="text-sm font-light text-gray-400 italic">Medical Equation Mining for Explainable AI</span></h3>
+                        <span class="text-[10px] bg-white/10 px-2 py-1 flex-shrink-0 ml-4 italic">2024.09 - 2025.05</span>
                     </div>
-                    <p class="text-[11px] text-gray-500 uppercase tracking-widest mb-5 font-bold">Explainable Machine Learning</p>
-                    <div class="space-y-4 text-[14px] text-gray-400 font-light">
-                        <p>应用 <strong>gplearn</strong> 算法开发符号回归程序，旨在揭示医疗数据集中变量间的显式数学关系，增强模型透明度。</p>
-                        <p class="text-sm border-l-2 border-white/20 pl-4 italic">
-                            成果：成功发掘多组医疗预测方程；引入参考变量提升准确度；模型封装为 Web API 供新加坡医院医疗系统调用。
+                    <div class="space-y-4 text-[14px] text-gray-400 font-light leading-relaxed">
+                        <p>应用 <strong>gplearn</strong> 算法开发符号回归程序，旨在揭示医疗数据集中变量间的显式数学关系，预测缺失值并增强模型透明度。<br>
+                        <span class="text-[13px] italic opacity-60">Developed symbolic regression programs using gplearn to reveal explicit mathematical relationships and predict missing values in healthcare datasets.</span></p>
+                        
+                        <p class="text-sm border-l-2 border-white/20 pl-4">
+                            <strong class="text-white">成果 / Outcomes:</strong> 发掘多组可解释医疗方程；引入参考变量进行特征选择并处理残差；模型封装为 Web API 供新加坡医院使用。<br>
+                            <span class="italic text-[13px] opacity-60">Discovered explainable medical equations; improved accuracy via feature selection; deployed as Web API for Singapore hospitals.</span>
                         </p>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Big Data -->
                 <div class="border border-white/10 p-8 hover:bg-white/[0.04] transition-all">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-lg font-bold">大数据工作负载分布式调度优化</h3>
-                        <span class="text-[10px] bg-white/10 px-2 py-1">2023.09 - 2024.05</span>
+                        <h3 class="text-lg font-bold leading-tight">大数据负载分布式调度优化<br><span class="text-sm font-light text-gray-400 italic">Big Data Workload Distribution Optimization</span></h3>
+                        <span class="text-[10px] bg-white/10 px-2 py-1 flex-shrink-0 ml-4 italic">2023.09 - 2024.05</span>
                     </div>
-                    <p class="text-[11px] text-gray-500 uppercase tracking-widest mb-5 font-bold">Distributed Systems & ML</p>
-                    <div class="space-y-4 text-[14px] text-gray-400 font-light">
-                        <p>师从 NUS <strong>Bharadwaj Veeravalli</strong> 教授。基于可分负载理论（DLT）优化异构系统中的任务释放与单/多趟调度方案。</p>
-                        <p class="text-sm border-l-2 border-white/20 pl-4 italic">
-                            成果：发表相关学术论文；开发基于 Jupyter 的监控 GUI；模拟大规模数据集用于 ML 调度方案训练。
+                    <div class="space-y-4 text-[14px] text-gray-400 font-light leading-relaxed">
+                        <p>师从 NUS <strong>Bharadwaj Veeravalli</strong> 教授。基于可分负载理论（DLT）优化异构系统中的任务调度，考虑释放时间并生成最优调度方案。<br>
+                        <span class="text-[13px] italic opacity-60">Optimized scheduling for heterogeneous systems via Divisible Load Theory (DLT) under the supervision of Prof. Bharadwaj Veeravalli (NUS).</span></p>
+                        
+                        <p class="text-sm border-l-2 border-white/20 pl-4">
+                            <strong class="text-white">成果 / Outcomes:</strong> 发表学术论文；开发基于 Jupyter 的监控 GUI；模拟大规模数据集用于机器学习训练。<br>
+                            <span class="italic text-[13px] opacity-60">Published academic paper; developed Jupyter-based monitoring GUI; generated large-scale datasets for ML-based scheduling.</span>
                         </p>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: CV -->
                 <div class="border border-white/10 p-8 hover:bg-white/[0.04] transition-all">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-lg font-bold">视频运动轨迹检测优化流程</h3>
-                        <span class="text-[10px] bg-white/10 px-2 py-1">2023.05 - 2023.06</span>
+                        <h3 class="text-lg font-bold leading-tight">暗光视频运动轨迹检测流程<br><span class="text-sm font-light text-gray-400 italic">Motion Trajectory Detection in Dark Video</span></h3>
+                        <span class="text-[10px] bg-white/10 px-2 py-1 flex-shrink-0 ml-4 italic">2023.05 - 2023.06</span>
                     </div>
-                    <p class="text-[11px] text-gray-500 uppercase tracking-widest mb-5 font-bold">Computer Vision</p>
-                    <div class="space-y-4 text-[14px] text-gray-400 font-light">
-                        <p>使用 Lucas-Kanade 和 Horn-Schunck 算法在暗光环境下估计光流。集成直方图均衡化与伽马变换增强图像质量。</p>
-                        <p class="text-sm border-l-2 border-white/20 pl-4 italic">
-                            成果：开发出一套高效视频处理流程，获计算机视觉设计优秀作品奖。
+                    <div class="space-y-4 text-[14px] text-gray-400 font-light leading-relaxed">
+                        <p>使用 Lucas-Kanade 和 Horn-Schunck 算法估计光流。集成直方图均衡化与伽马变换增强图像，提取复杂光影环境下的运动轨迹。<br>
+                        <span class="text-[13px] italic opacity-60">Estimated optical flow using LK/HS algorithms. Employed histogram equalization and Gamma transformation for low-light image enhancement.</span></p>
+                        
+                        <p class="text-sm border-l-2 border-white/20 pl-4">
+                            <strong class="text-white">成果 / Outcomes:</strong> 开发出一套高效视频处理流程，获计算机视觉设计优秀作品奖。<br>
+                            <span class="italic text-[13px] opacity-60">Designed an efficient video processing workflow; awarded Excellent Work in Computer Vision Design.</span>
                         </p>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 4: Robotics -->
                 <div class="border border-white/10 p-8 hover:bg-white/[0.04] transition-all">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-lg font-bold">基于手势识别的无接触采样系统</h3>
-                        <span class="text-[10px] bg-white/10 px-2 py-1">2022.05 - 2023.05</span>
+                        <h3 class="text-lg font-bold leading-tight">基于手势识别的核酸采样系统<br><span class="text-sm font-light text-gray-400 italic">Gesture-based Contactless Sampling System</span></h3>
+                        <span class="text-[10px] bg-white/10 px-2 py-1 flex-shrink-0 ml-4 italic">2022.05 - 2023.05</span>
                     </div>
-                    <p class="text-[11px] text-gray-500 uppercase tracking-widest mb-5 font-bold">HCI & Robotics</p>
-                    <div class="space-y-4 text-[14px] text-gray-400 font-light">
-                        <p>项目负责人。结合 Leap Motion 与红外传感技术，通过手势识别操控机械臂进行医疗采样，避免交叉感染。</p>
-                        <p class="text-sm border-l-2 border-white/20 pl-4 italic">
-                            成果：负责方案设计、机械组装与程序编写；项目入围国家级大学生创新创业项目。
+                    <div class="space-y-4 text-[14px] text-gray-400 font-light leading-relaxed">
+                        <p>负责人。结合 Leap Motion 与红外传感，应用人机交互技术操控机械臂进行无接触采样，旨在降低交叉感染风险。<br>
+                        <span class="text-[13px] italic opacity-60">Project Lead. Integrated Leap Motion and infrared sensors to control a robotic arm for contactless medical sampling using HCI techniques.</span></p>
+                        
+                        <p class="text-sm border-l-2 border-white/20 pl-4">
+                            <strong class="text-white">成果 / Outcomes:</strong> 完成方案设计与机械臂程序开发；项目入围国家级大学生创新创业计划。<br>
+                            <span class="italic text-[13px] opacity-60">Completed system design and programming; shortlisted for the National Undergraduate Training Program for Innovation and Entrepreneurship.</span>
                         </p>
                     </div>
                 </div>
